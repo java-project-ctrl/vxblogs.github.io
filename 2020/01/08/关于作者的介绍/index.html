@@ -376,29 +376,35 @@
 
 
   
-  
-  
+  <div id="gitalk-container" style="padding: 0px 30px 0px 30px;"></div> 
 
-  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script type="text/javascript">
 
-  
-
-  
-  <div id="gitment-ctn"></div> 
-<link rel="stylesheet" href="https://jjeejj.github.io/css/gitment.css">
-<script src="https://jjeejj.github.io/js/gitment.js"></script>
-<script>
-var gitment = new Gitment({
-  id: 'Wed Jan 08 2020 23:12:34 GMT+0800',
-  owner: 'destructivestar',
-  repo: 'destructivestar.github.io',
-  oauth: {
-    client_id: '8ccacfd891a4b563f70b',
-    client_secret: '7458c7dd6ccbf898143fed796b219fce313f6228',
-  },
+if(true){
+	var gitalk = new Gitalk({
+  	clientID: '8ccacfd891a4b563f70b',
+  	clientSecret: '7458c7dd6ccbf898143fed796b219fce313f6228',
+  	repo: 'destructivestar.github.io',
+  	owner: 'destructivestar',
+  	admin: ['destructivestar'],
+  	id: 'Wed Jan 08 2020 23:12:34 GMT+0800',
+  	distractionFreeMode: 'true'
 })
-gitment.render('gitment-ctn')
+gitalk.render('gitalk-container') 
+}
 </script>
+  
+
+  
+  
+  
+
+  
+
+  
+
   
 
 
